@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/01 22:00:51 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/01 22:00:51 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:02:06 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/01 22:02:06 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 size_t	ft_strlen(const char *str)
 {

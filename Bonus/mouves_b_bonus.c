@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/01 22:01:01 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/03 09:11:50 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:02:18 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/03 09:08:42 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 void	ft_pb(t_list **stack_a, t_list **stack_b)
 {
@@ -22,7 +22,6 @@ void	ft_pb(t_list **stack_a, t_list **stack_b)
 	(*stack_a) = (*stack_a)->next;
 	tmp->next = (*stack_b);
 	(*stack_b) = tmp;
-	write(1, "pb\n", 3);
 }
 
 void	ft_rb(t_list **stack_b)
@@ -37,7 +36,6 @@ void	ft_rb(t_list **stack_b)
 	tmp->next = (*stack_b);
 	(*stack_b) = (*stack_b)->next;
 	tmp->next->next = NULL;
-	write(1, "rb\n", 3);
 }
 
 void	ft_rr(t_list **stack_a, t_list **stack_b)
@@ -58,7 +56,6 @@ void	ft_rr(t_list **stack_a, t_list **stack_b)
 	tmp->next = (*stack_b);
 	(*stack_b) = (*stack_b)->next;
 	tmp->next->next = NULL;
-	write(1, "rr\n", 3);
 }
 
 void	ft_rrb(t_list **stack_b)
@@ -76,7 +73,6 @@ void	ft_rrb(t_list **stack_b)
 	before_last->next = NULL;
 	tmp->next = (*stack_b);
 	(*stack_b) = tmp;
-	write(1, "rrb\n", 4);
 }
 
 void	ft_rrr(t_list **stack_a, t_list **stack_b)
@@ -102,5 +98,4 @@ void	ft_rrr(t_list **stack_a, t_list **stack_b)
 	before_last->next = NULL;
 	tmp->next = (*stack_b);
 	(*stack_b) = tmp;
-	write(1, "rrr\n", 4);
 }

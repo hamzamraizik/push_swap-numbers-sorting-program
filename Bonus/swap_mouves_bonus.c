@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/01 22:01:33 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/04 21:37:07 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:02:23 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/01 22:02:23 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 void	ft_ss(t_list **stack_a, t_list **stack_b)
 {
@@ -27,7 +27,6 @@ void	ft_ss(t_list **stack_a, t_list **stack_b)
 	(*stack_b) = (*stack_b)->next;
 	tmp2->next = (*stack_b)->next;
 	(*stack_b)->next = tmp2;
-	write(1, "ss\n", 3);
 }
 
 void	ft_sa(t_list **stack_a)
@@ -40,7 +39,6 @@ void	ft_sa(t_list **stack_a)
 	(*stack_a) = (*stack_a)->next;
 	tmp->next = (*stack_a)->next;
 	(*stack_a)->next = tmp;
-	write(1, "sa\n", 3);
 }
 
 void	ft_sb(t_list **stack_b)
@@ -53,5 +51,4 @@ void	ft_sb(t_list **stack_b)
 	(*stack_b) = (*stack_b)->next;
 	tmp->next = (*stack_b)->next;
 	(*stack_b)->next = tmp;
-	write(1, "sb\n", 3);
 }

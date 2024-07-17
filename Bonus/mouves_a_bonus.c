@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/01 22:00:57 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/03 09:10:41 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:02:14 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/03 09:09:31 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 void	ft_pa(t_list **stack_b, t_list **stack_a)
 {
@@ -22,7 +22,6 @@ void	ft_pa(t_list **stack_b, t_list **stack_a)
 	*stack_b = (*stack_b)->next;
 	tmp->next = *stack_a;
 	*stack_a = tmp;
-	write(1, "pa\n", 3);
 }
 // ____________________________________
 
@@ -38,7 +37,6 @@ void	ft_ra(t_list **stack_a)
 	tmp->next = (*stack_a);
 	(*stack_a) = (*stack_a)->next;
 	tmp->next->next = NULL;
-	write(1, "ra\n", 3);
 }
 
 void	ft_rra(t_list **stack_a)
@@ -56,5 +54,4 @@ void	ft_rra(t_list **stack_a)
 	before_last->next = NULL;
 	tmp->next = (*stack_a);
 	(*stack_a) = tmp;
-	write(1, "rra\n", 4);
 }

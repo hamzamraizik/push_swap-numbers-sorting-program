@@ -5,14 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/01 22:00:54 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/04 21:48:24 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:02:10 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/05 06:33:13 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
-// indexing the values from smaller to the bigger
 void	indexing(t_list **stack, t_list **new)
 {
 	t_list	*tmp;

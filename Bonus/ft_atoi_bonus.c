@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/28 02:33:04 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/06 20:16:07 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:01:55 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/03 02:45:43 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 int	error(void)
 {

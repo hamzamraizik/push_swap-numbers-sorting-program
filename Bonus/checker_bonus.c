@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   checker_bonus.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/01 22:01:46 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/06 21:48:40 by hmraizik         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "checker.h"
 
 void	storing(t_list **stack_a, char **res2)
@@ -15,8 +27,6 @@ void	storing(t_list **stack_a, char **res2)
 		i++;
 	}
 	free_substrs(res2);
-	if (check_sorted(*stack_a) == 1)
-		exit(0);
 }
 
 void	ft_rest(t_list **stack_a, t_list **stack_b, char *s)
@@ -75,8 +85,9 @@ void	process(int argc, char **argv)
 		exit(0);
 	joining(argc, argv, &res);
 	res2 = ft_split(res, ' ', 0);
+	free(res);
 	if (!res2)
-		return ;
+		exit(1);
 	stack_a = ft_lstnew(&stack_a, ft_atoi((res2[0]), 0));
 	storing(&stack_a, res2);
 	check_mouves(&stack_a, &stack_b, s);

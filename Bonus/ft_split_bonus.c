@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hmraizik <hmraizik@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/04 22:47:39 by hmraizik          #+#    #+#             */
-/*   Updated: 2024/04/04 22:47:39 by hmraizik         ###   ########.fr       */
+/*   Created: 2024/04/01 22:02:00 by hmraizik          #+#    #+#             */
+/*   Updated: 2024/04/01 22:02:00 by hmraizik         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 int	count_word(const char *s, char c)
 {
